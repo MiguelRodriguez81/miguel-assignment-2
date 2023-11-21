@@ -13,20 +13,20 @@ public class Assignment2 {
 		int i, guess = 0;
 		System.out.println("Pick a number between 1 and 100");
 		
-		for (i = 0; i < j; i++) {
-			
+		for (i = 0; i < j; i++) {			
 			guess = scanner.nextInt();
 			
 			if (number == guess) {
 				System.out.println("You win!");
 				break;
 			}
-			
 			if (guess > 100) {
-				System.out.println("Your guess is not between 1 and 100, please try again");
+				System.out.println("Your guess is not between 1 and 100, please try again!");
+				j++;
 			}
 			else if (guess < 1) {
-				System.out.println("Your guess is not between 1 and 100, please try again");
+				System.out.println("Your guess is not between 1 and 100, please try again!");
+				j++;
 			}
 			else if (number > guess && i != j - 1) {
 				System.out.println("Please pick a higher number");
